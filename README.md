@@ -1,63 +1,85 @@
-🧠✨ Mini Game Engine (C++)
+# 🧠 Mini Game Engine (C++)
 
-🎮 Not just a game… but a scalable game architecture.
-💡 Designed with engineering mindset, not just coding.
+> Not just a game… but a scalable game architecture.
 
-🖼️ Project Preview
-🚀 Overview
-<div align="center">
-⚡ Feature	💬 Description
-🧠 Architecture	Component-Based Design
-♻️ Reusability	Reusable Systems
-🧩 Modularity	Clean Separation
-⚙️ Engine Core	Game Loop System
-</div>
-🎯 Key Concepts
-<div align="center">
+---
 
-🧩 Component-Based Design
-🧠 Separation of Concerns
-♻️ Reusability
-📦 Modular Architecture
-⚙️ Game Loop System
+## 🚀 Overview
 
-</div>
-🧱 Architecture Breakdown
-🧍 GameObject
-+ Represents any entity in the game world
-+ Examples: Player, Enemy, NPC
-🔌 Components System
-Component	Icon	Responsibility
-Movement	🏃	Handle motion
-Render	🎨	Draw objects
-Physics	💥	Handle collisions
-Input	🎮	Handle controls
-📌 Core Idea
-GameObject = Container of Components
-🔁 Game Loop Visualization
-💻 Implementation
+This project is a **mini game engine built in C++** using a **Component-Based Architecture**.
+
+Instead of building a single game, this project focuses on designing a **reusable and scalable system** that can be used to create different types of games.
+
+---
+
+## 🎯 Key Concepts
+
+* 🧩 Component-Based Design
+* 🧠 Separation of Concerns
+* ♻️ Reusability
+* 📦 Modular Architecture
+* ⚙️ Game Loop System
+
+---
+
+## 🧱 Architecture
+
+### 🧍 GameObject
+
+Represents any entity in the game (Player, Enemy, etc.)
+
+### 🔌 Component
+
+Each behavior is separated into components:
+
+* Movement Component 🏃
+* Render Component 🎨
+* Physics Component 💥
+* Input Component 🎮
+
+📌 A GameObject is just a collection of Components.
+
+---
+
+## 🔁 Game Loop
+
+The engine runs using a simple loop:
+
+```cpp
 while (true) {
     gameObject.update();
 }
-📊 System Flow
-💡 Why This Project?
+```
 
-⚠️ معظم المشاريع = "أسوي لعبة"
-🚀 هذا المشروع = "أبني نظام ألعاب"
+Each component updates independently, ensuring clean separation of logic.
 
-🧠 What it shows:
+---
 
-✔️ Advanced OOP Thinking
-✔️ Real Software Engineering Mindset
-✔️ Clean Architecture Design
-✔️ Scalable Systems
+## 💡 Why This Project?
 
-🔥 Features
-+ Dynamic Component System
-+ Plug & Play Architecture
-+ Clean Code Structure
-+ High Scalability
-🧪 Example Usage
+Most beginner projects focus on building a game.
+This project focuses on **building the system behind the game**.
+
+👉 This demonstrates:
+
+* Strong understanding of OOP
+* Real-world software architecture thinking
+* Clean and maintainable code design
+
+---
+
+## 🔥 Features
+
+* Add/remove components dynamically
+* Extendable architecture
+* Clean and readable structure
+* Easy to scale into a full engine
+
+---
+
+## 🧪 Example Usage
+
+```cpp
 GameObject player;
 
 player.addComponent(new MovementComponent());
@@ -66,43 +88,33 @@ player.addComponent(new PhysicsComponent());
 player.addComponent(new InputComponent());
 
 player.update();
-📦 Project Structure
-📁 Mini-Game-Engine
- ┣ 📂 Core
- ┣ 📂 Components
- ┣ 📂 Systems
- ┣ 📜 main.cpp
-📈 Future Improvements
-Feature	Status
-Scene System 🎬	⏳ Planned
-Event System ⚡	⏳ Planned
-Collision Engine 💥	⏳ Planned
-Transform System 📍	⏳ Planned
-Full ECS 🚀	🔥 Goal
-📊 Complexity Level
-🛠️ Technologies
-<div align="center">
+```
 
+---
 
+## 🛠️ Technologies
 
+* C++
+* Object-Oriented Programming (OOP)
 
-</div>
-👩‍💻 Author
-<div align="center">
+---
 
-✨ Rawan Aldawsari ✨
+## 📈 Future Improvements
 
-💻 Computer Science Student
-🚀 Future AI Engineer
+* Scene Management System
+* Event System
+* Collision Detection
+* Transform Component (Position / Rotation)
+* Full Entity Component System (ECS)
 
-</div>
-⭐ Final Note
+---
 
-💡 This project represents a shift from:
+## 👩‍💻 Author
 
-- Writing Code
-+ Engineering Systems
-🔥 HR Impression Meter
-Beginner Project     ███░░░░░░░░░ 30%
-Game Project         █████░░░░░░░ 50%
-Engine Architecture  ███████████░ 95% 🚀
+**Rawan Aldawsari**
+
+---
+
+## ⭐ Final Note
+
+This project represents a shift from writing code to **engineering systems**.
